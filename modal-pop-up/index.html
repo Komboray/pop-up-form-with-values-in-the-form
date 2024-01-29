@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <title>Popup Form Example</title>
+    <style>
+          /* transactions page */
+.form{
+    padding: 30px 40px;
+}
+
+.form-control{
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+.form-control label{
+    display: inline-block;
+    margin-bottom: 5px;
+    color:blue;
+}
+.form-control input{
+    border: 2px solid #f0f0f0;
+    border-radius: 4px;
+    display: block;
+    
+    font-size: 14px;
+    padding: 10px;
+    width: 100%;
+}
+
+.form-control input:focus{
+    outline: 0;
+    border-color: #777;
+}
+
+
+.form button{
+    background-color: #8e44ad;
+    border: 2px solid #8e44ad;
+    border-radius: 4px;
+    color: #fff;
+    display: block;
+    
+    font-size: 16px;
+    padding: 10px;
+    margin-top: 20px;
+    
+    width: 100%;
+}   
+    </style>
+</head>
+<body>
+
+<!-- Your content goes here -->
+
+<!-- Span element to trigger the popup -->
+<span id="openForm">Open Form</span>
+
+<!-- The popup form -->
+<!-- <div id="popupForm" class="popup-form"> -->
+    
+    <!-- <form action='database/meds.php' class='form' id='form' method='POST'> -->
+        <div class='contain popup-form' id="popupForm">
+            <div class='head'>
+            <h2 style='color:blue;text-align:center;'></h2>
+            </div>
+           <form action='database/meds.php' class='form' id = 'form' method = 'POST'>
+             <div class='form-control'>
+                <label for='name' >Name of medicine</label>
+                 <input type='text' name='name' id='name' required>
+                 <label for='name' >Generic</label>
+                 <input type='text' name='generic' id='generic' required>
+                 <label for='name' >brand</label>
+                 <input type='text' name='brand' id='brand' required>
+                 <label for='name' >dosage</label>
+                 <input type='text' name='dosage' id='dosage' required>
+                 <label for='name' >strength</label>
+                 <input type='text' name='strength' id='strength' required>
+                 <label for='name' >routeOfAdmin</label>
+                 <input type='text' name='routeOfAdmin' id='routeOfAdmin' required>
+                 <label for='name' >prescriptionStatus</label>
+                 <input type='text' name='prescriptionStatus' id='prescriptionStatus' required>
+                 <label for='name' >indications</label>
+                 <input type='text' name='indications' id='indications' required>
+                 <label for='name' >contraindications</label>
+                 <input type='text' name='contraindications' id='contraindications' required>
+                 <label for='name' >sideEffects</label>
+                 <input type='text' name='sideEffects' id='sideEffects' required>
+                 <label for='name' >storageConditions</label>
+                 <input type='text' name='storageConditions' id='storageConditionsname' required>
+                 <label for='name' >expiryDate	</label>
+                 <input type='text' name='expiryDate' id='expiryDate' required>
+                 <label for='name' >manufInformation</label>
+                 <input type='text' name='manufInformation' id='manufInformation' required>
+                 <label for='name' >batch</label>
+                 <input type='text' name='batch' id='batch' required>
+                 <label for='name' >nationalDrugCode</label>
+                 <input type='text' name='nationalDrugCode' id='nationalDrugCode' required>
+                 <label for='name' >cost</label>
+                 <input type='text' name='cost' id='cost' required>
+                 <label for='name' >warningPrecautions</label>
+                 <input type='text' name='warningPrecautions' id='warningPrecautions' required>
+                 <label for='name' >interactions</label>
+                 <input type='text' name='interactions' id='interactions' required>
+                 
+                 
+                  </div>
+    
+                 <button type ='submit' name= 'medsSubmit'> Submit</button>
+                  </form>
+            </div>
+            <span class="close" id="closeForm" onclick="closePopupForm()">&times;</span>
+       
+    <!-- </form> -->
+<!-- </div> -->
+
+<!-- Your content continues here -->
+
+</body>
+</html>
